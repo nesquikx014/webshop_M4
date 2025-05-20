@@ -1,0 +1,200 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: italic;
+
+}
+
+body{
+    font-size: 20px;
+    font-family: italic;
+    line-height: 1.5;
+}
+.header{
+    background: black;
+    display: flex;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.headerimg_1logo{
+    max-height: inherit;
+    display: block;
+    width: 5rem;
+    margin-left: 4rem;
+}
+
+.foto-container {
+  gap: 1rem; /* ruimte tussen de foto's */
+  justify-content: center;
+  align-items: flex-start;
+     flex-shrink: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+.foto-groot{
+    width: 30rem;
+  height: 16rem;    
+  margin-bottom: 50rem;
+  border-radius: 1%;
+  margin-left: 52rem;
+}
+    
+.foto-klein{
+  width: 40rem;
+  height: 40rem;
+  margin-top: 10rem;
+  margin-bottom: -41rem;    
+  border-radius: 1%;
+  margin-left:8rem;
+  
+}
+.foto-middel{
+width: 30rem;
+  border-radius: 1%;
+  margin-top: -47rem;
+  margin-right: -184rem;
+  margin-left: 52rem;
+  margin-bottom: 10rem;
+
+}
+.titel{
+   background: transparent;
+  color: white;
+  border: none;
+  font-size: 200%;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+}
+.header_button{
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 134%;
+  letter-spacing: 2px;
+  margin-right: 8rem;
+  
+}
+.page content{
+    display: block;
+}
+.menu-main-ul{
+    display: flex;
+    align-items: baseline;
+    padding: 1.4rem 1.4rem 1.4rem .4rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-decoration: none;
+    gap: 8rem;
+    margin-left: 7.5rem;
+}
+.header-menu ::before{
+    display: flex;
+    align-items: baseline;
+    padding: 1.4rem 1.4rem 1.4rem .4rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-decoration: none;
+}
+@media (min-width: 880px){
+.store__header-layout{
+    display: flex;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin: 0 auto;
+    max-width: 127.6rem;
+    padding-bottom: 10rem;
+}
+}
+@media (min-width: 880px), print {
+ .store__header-layout .store__header-side{
+position: relative;
+    z-index: 5;
+
+  }
+}
+@media (min-width: 880px), print {
+  .store__header-wrapper .header-menu .ui-menu a {
+    display: flex;
+    align-items: baseline;
+    padding: 1.4rem 1.4rem 1.4rem .4rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-decoration: none;
+    background: black;
+  }
+}
+@media (min-width: 880px), print {
+  .store__header-wrapper .header-menu .ui-menu > li + li {
+    border-image-width: .1rem 0 0 auto;
+    border-image-repeat: repeat;
+    border-image-source: linear-gradient(90deg,#34384c,#34384c calc(100% - 1.4rem),transparent calc(100% - 1.4rem));
+    border-width: .1rem 0 0;
+    border-style: solid;
+  }
+}
+@media (min-width: 880px), print {
+  .store__header-wrapper .header-menu .ui-menu > li {
+    margin-bottom: 0;
+    background: #000000c0;
+  }
+}
+
+.campaign .campaign__link {
+  background: none;
+  border: none;
+  color: #0000;
+  display: inline-block;
+  height:5%;
+  width: 5%;
+}
+@media (min-width: 880px), print {
+  .store__header-wrapper .header-menu {
+    display: block;
+    margin-left: -2.6rem;
+  }
+}
+@media (min-width: 880px), print {
+  .store__header-wrapper .header-menu .ui-menu a {
+    display: flex;
+    align-items: baseline;
+    padding: 1.4rem 1.4rem 1.4rem .4rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-decoration: none;
+  }
+}
+.brand-slider .brand-slider__wrapper {
+  line-height: 2em;
+  margin: auto;
+  padding: 40px 0;
+  position: relative;
+  width: 1200px;
+}
+.brand-slider .brand-slider__title-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.brand-slider .brand-slider__title {
+  font-family: DINPro-bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.brand-slider .brand-slider__scroll-arrows {
+  display: flex;
+  gap: 20px;
+}
+  
