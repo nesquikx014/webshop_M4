@@ -2,13 +2,13 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: italic;
+    font-family: DINPro-bold;
 
 }
 
 body{
     font-size: 20px;
-    font-family: italic;
+    font-family: DINPro-bold;
     line-height: 1.5;
 }
 .header{
@@ -17,7 +17,7 @@ body{
     min-height: 100px;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 19px;
 }
 .headerimg_1logo{
     max-height: inherit;
@@ -75,7 +75,7 @@ width: 30rem;
   color: white;
   border: none;
   font-size: 134%;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   margin-right: 8rem;
   
 }
@@ -91,7 +91,7 @@ width: 30rem;
     font-weight: 700;
     letter-spacing: .05rem;
     text-decoration: none;
-    gap: 8rem;
+    gap: 7rem;
     margin-left: 7.5rem;
 }
 .header-menu ::before{
@@ -103,6 +103,7 @@ width: 30rem;
     font-weight: 700;
     letter-spacing: .05rem;
     text-decoration: none;
+
 }
 @media (min-width: 880px){
 .store__header-layout{
@@ -111,7 +112,7 @@ width: 30rem;
     padding-right: 0.6rem;
     margin: 0 auto;
     max-width: 127.6rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
 }
 }
 @media (min-width: 880px), print {
@@ -137,7 +138,6 @@ position: relative;
   .store__header-wrapper .header-menu .ui-menu > li + li {
     border-image-width: .1rem 0 0 auto;
     border-image-repeat: repeat;
-    border-image-source: linear-gradient(90deg,#34384c,#34384c calc(100% - 1.4rem),transparent calc(100% - 1.4rem));
     border-width: .1rem 0 0;
     border-style: solid;
   }
@@ -145,7 +145,7 @@ position: relative;
 @media (min-width: 880px), print {
   .store__header-wrapper .header-menu .ui-menu > li {
     margin-bottom: 0;
-    background: #000000c0;
+    background: white;
   }
 }
 
@@ -160,7 +160,7 @@ position: relative;
 @media (min-width: 880px), print {
   .store__header-wrapper .header-menu {
     display: block;
-    margin-left: -2.6rem;
+    margin-left: -5.6rem;
   }
 }
 @media (min-width: 880px), print {
@@ -173,6 +173,8 @@ position: relative;
     font-weight: 700;
     letter-spacing: .05rem;
     text-decoration: none;
+    border-radius: 1rem;
+    
   }
 }
 .brand-slider .brand-slider__wrapper {
@@ -192,9 +194,67 @@ position: relative;
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
+  margin-left: 8rem;
+  /*padding-bottom: 5rem;*/
 }
 .brand-slider .brand-slider__scroll-arrows {
   display: flex;
   gap: 20px;
 }
-  
+.brand-slider .brand-slider__circle {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  height: 130px;
+  justify-content: center;
+  width: 130px;
+}
+.brand-slider .brand-slider__name {
+  color: initial;
+  margin-top: 10px;
+}
+.brand-slider .brand-slider__image {
+  height: 91px;
+  width: 91px;
+}
+.brand-slider .brand-slider__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.brand-slider__item {
+  width: 132.5px;
+  margin-right: 20px;
+}
+
+.brand-slider_list{
+  padding-top: 2rem;
+  margin-left: 8rem;
+}
+.brand-slider .brand-slider__list {
+  display: flex;
+  list-style: none;
+  padding: 20px 0;
+}
+.swiper-wrapper {
+  box-sizing: initial;
+  display: flex;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+  z-index: 1;
+  gap: 3rem;
+}
+@media (min-width: 880px), print {
+  .store__header-wrapper .header-menu .ui-menu a {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-align: inherit;
+    padding-left: 2rem;
+  }
+}
