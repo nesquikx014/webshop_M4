@@ -10,24 +10,83 @@ body{
     font-size: 20px;
     font-family: DINPro-bold;
     line-height: 1.5;
+  background-color: white;
+  color: black;
+  font-size: 25px;
 }
+
+form.example input[type=text] {
+  padding: 1.0rem;
+  font-size: 1rem;
+  border: 0.1rem solid rgb(223, 209, 88);  
+  float: left;
+  width: 80%;
+  background: #ffffff;
+  
+}
+form.example button {
+  float: left;
+  width: 10%;
+  padding: 1rem;
+  background: rgb(223, 209, 88);  
+  color: white;
+  font-size: 1.15rem;
+  border: 0.1rem solid rgb(223, 209, 88);  
+  border-left: none;
+  cursor: pointer;
+  
+}
+.example{
+  
+  margin-left: 15rem;
+}
+form.example button:hover {
+  background: #ffffff;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-right: 22rem;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.button_styler{
+  background: transparent;
+  border-radius: 1rem;
+  margin-left: 44.9rem;
+  width: 4rem;
+  padding: 1rem;
+  box-shadow: 95rem;
+}
+.button_styler_text{
+ height: 4rem; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+  
 .header{
-    background: black;
+    background: rgb(0, 0, 0);
     display: flex;
     min-height: 100px;
     justify-content: space-between;
     align-items: center;
-    padding: 1.9rem;
+    padding: 3rem;
 }
 .headerimg_1logo{
     max-height: inherit;
     display: block;
     width: 5rem;
     margin-left: 4rem;
+    color: black;
 }
 
 .foto-container {
-  gap: 1rem; /* ruimte tussen de foto's */
+  gap: 1rem;
   justify-content: center;
   align-items: flex-start;
      flex-shrink: 0;
@@ -70,23 +129,15 @@ width: 30rem;
   justify-content: center;
   align-items: center;
 }
-.header_button{
-  background: transparent;
-  color: white;
-  border: none;
-  font-size: 134%;
-  letter-spacing: 0.2rem;
-  margin-right: 8rem;
-  
-}
 .page content{
     display: block;
+    
 }
 .menu-main-ul{
     display: flex;
     align-items: baseline;
     padding: 1.4rem 1.4rem 1.4rem .4rem;
-    color: #fff;
+    color:transparent;
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: .05rem;
@@ -191,7 +242,7 @@ position: relative;
 }
 .brand-slider .brand-slider__title {
   font-family: DINPro-bold;
-  font-size: 36px;
+  font-size: 3rem;
   line-height: 40px;
   text-transform: uppercase;
   margin-left: 8rem;
@@ -211,12 +262,12 @@ position: relative;
   width: 130px;
 }
 .brand-slider .brand-slider__name {
-  color: initial;
   margin-top: 10px;
+  font-family: DINPro-bold;
 }
 .brand-slider .brand-slider__image {
-  height: 91px;
-  width: 91px;
+  height: 9.1rem;
+  width: 9.1rem;
 }
 .brand-slider .brand-slider__item {
   align-items: center;
@@ -257,4 +308,70 @@ position: relative;
     text-align: inherit;
     padding-left: 2rem;
   }
+}
+.se_ad{
+  display: flex;
+  justify-content: left;
+  align-items: left;  
+}
+.cover_box {
+  position: relative;
+width: 43rem;
+  height: 26rem;
+  background: transparent;
+  border: 0.3rem solid rgb(223, 209, 88);
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  display: flex;
+    justify-content: center;
+  align-items: center;
+  margin-top: -14rem;
+  margin-left: 22rem;
+  margin-bottom: 15rem;
+  font-size: 1.5rem;
+}
+.ad_knop{
+  width: 8.4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background: transparent;
+  border: 0.15rem solid black;
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-left: 2rem;
+}
+
+.ad_knop:hover {
+  background: black;
+  color: white;
+}
+
+
+.actio_piano{
+  width: 22rem;
+  margin-right: 2rem;
+}
+.input-box{
+border: 0.15rem solid rgb(0, 0, 0);
+width: 19.2rem;
+border-radius: 1rem;
+margin-bottom: 2rem;
+ margin-left: 2rem;
+ height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-box_login_h2{
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.label_style{
+  margin-left: 0rem;
+  width: 15rem;
 }
