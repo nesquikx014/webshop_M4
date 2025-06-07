@@ -179,7 +179,6 @@ display: flex;
   margin-top: 6rem;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 1.2rem 1.6rem;
@@ -187,8 +186,10 @@ display: flex;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.checked {
+  color: orange;
+}
