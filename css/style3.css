@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  .mySlides {display: none}
+img {vertical-align: middle;}
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: sans-serif;
+  background: radial-gradient(circle, rgb(241, 229, 234) 0%, rgb(220, 227, 242) 100%);
+}
+
+.header {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.9rem;
+  min-height: 100px;
+}
+.headerimg_1logo {
+  width: 8rem;
+  margin-left: 4rem;
+}
+.text_header{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.3rem;
+  font-family: DINPro-bold;
+}
