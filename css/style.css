@@ -242,8 +242,8 @@ position: relative;
 }
 .brand-slider .brand-slider__title {
   font-family: DINPro-bold;
-  font-size: 3rem;
-  line-height: 40px;
+  font-size: 2rem;
+  line-height: 4rem;
   text-transform: uppercase;
   margin-left: 8rem;
   /*padding-bottom: 5rem;*/
@@ -295,7 +295,7 @@ position: relative;
   height: 100%;
   position: relative;
   transition-property: transform;
-  width: 100%;
+  max-width: 20rem;
   z-index: 1;
   gap: 3rem;
 }
