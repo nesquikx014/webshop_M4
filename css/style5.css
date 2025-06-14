@@ -35,3 +35,94 @@ body {
   font-size: 7.3rem;
   font-family: DINPro-bold;
 }
+.titel_huren{
+  display: flex;
+  padding: 5rem;
+  margin-bottom: -12rem;
+  font-size: 3rem;
+  justify-content: center;
+  margin-right: 13rem;
+}
+.text_huren{
+  flex-grow: 1;
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  flex-shrink: 1;
+  max-width: 50ch;
+  margin-left: 50rem;
+}
+.info{
+padding: 5rem;
+  display: flex;
+  gap:  6rem;
+  justify-content: center;
+}
+.vragen_contact{
+        display: flex;
+    align-items: baseline;
+    padding: 1.4rem 1.4rem 1.4rem ;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-decoration: none;
+   justify-content: center;
+   align-items: center;
+}
+.allebei_vragen{
+    margin-top: 10rem;
+        display: flex;
+    align-items: baseline;
+    padding: 1.4rem 1.4rem 1.4rem .4rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    text-decoration: none;
+    gap: 7rem;
+    margin-left: 25rem;
+
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  background: lightyellow;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(223, 209, 88);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+  border-radius: 5px;
+  padding: 20px;
+    max-width: 97ch;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 50rem;
+border: 0.15rem solid rgb(0, 0, 0);
+
+}
