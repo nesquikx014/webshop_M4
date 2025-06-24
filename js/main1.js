@@ -5,6 +5,7 @@ function voegToeAanWinkelwagen() {
   document.getElementById("cartcount").textContent = aantalProducten;
 }
 
+
 const productContainer = document.getElementById('products');
 const productTemplate = document.getElementById('product-template');
 
@@ -34,6 +35,7 @@ const products_array = [
   
 ];
 
+
 products_array.forEach((product, index) => {
   const [beschrijving, prijs, afbeelding, naam, beschikbaar] = product;
 
@@ -44,7 +46,40 @@ products_array.forEach((product, index) => {
   clone.querySelector('.product__img').src = afbeelding;
   clone.querySelector('.product__img').alt = naam;
   clone.querySelector('.product__title').textContent = naam;
-  clone.querySelector('.product__description').textContent = beschrijving;
+const maxLength = 100; // aantal tekens voor korte tekst
+
+const shortTextElem = clone.querySelector('.short-text');
+const dotsElem = clone.querySelector('.dots');
+const moreTextElem = clone.querySelector('.more-text');
+const readMoreBtn = clone.querySelector('.read-more-btn');
+
+if (beschrijving.length > maxLength) {
+  shortTextElem.textContent = beschrijving.substring(0, maxLength);
+  moreTextElem.textContent = beschrijving.substring(maxLength);
+  dotsElem.style.display = "inline";
+  readMoreBtn.style.display = "inline";
+} else {
+  shortTextElem.textContent = beschrijving;
+  dotsElem.style.display = "none";
+  moreTextElem.style.display = "none";
+  readMoreBtn.style.display = "none";
+}
+
+// Event listener om uitklappen/inklappen te regelen
+readMoreBtn.addEventListener('click', () => {
+  if (moreTextElem.style.display === "none") {
+    moreTextElem.style.display = "inline";
+    dotsElem.style.display = "none";
+    readMoreBtn.textContent = "Lees minder..";
+  } else {
+    moreTextElem.style.display = "none";
+    dotsElem.style.display = "inline";
+    readMoreBtn.textContent = "Lees meer..";
+  }
+});
+
+
+
 
  if (!beschikbaar) {
   const knop = clone.querySelector('.product___button');
