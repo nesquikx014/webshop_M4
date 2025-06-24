@@ -354,14 +354,15 @@ width: 43rem;
 .actio_piano{
   width: 22rem;
   margin-right: 2rem;
+  border-radius: 1rem;
 }
 .input-box{
 border: 0.15rem solid rgb(0, 0, 0);
-width: 19.2rem;
-border-radius: 1rem;
-margin-bottom: 2rem;
- margin-left: 2rem;
- height: 3.2rem;
+  width: 16.2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  height: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;

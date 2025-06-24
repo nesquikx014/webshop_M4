@@ -66,7 +66,6 @@ if (beschrijving.length > maxLength) {
   readMoreBtn.style.display = "none";
 }
 
-// Event listener om uitklappen/inklappen te regelen
 readMoreBtn.addEventListener('click', () => {
   if (moreTextElem.style.display === "none") {
     moreTextElem.style.display = "inline";
