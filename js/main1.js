@@ -104,7 +104,7 @@ function filterFunction() {
   const filter = input.value.toLowerCase();
   const productContainer = document.getElementById("products");
   const products = productContainer.getElementsByClassName("product");
-
+  
   for (let i = 0; i < products.length; i++) {
     const title = products[i].querySelector(".product__title").textContent.toLowerCase();
     const description = products[i].querySelector(".product__description").textContent.toLowerCase();
