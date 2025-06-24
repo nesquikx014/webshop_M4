@@ -437,5 +437,6 @@ border: 0.15rem solid rgb(0, 0, 0);
   flex:0 1 auto;
   width:100%;
   min-width:0;
-  padding:0 .8rem
+  padding:0 .8rem;
+  color: white;
 }
