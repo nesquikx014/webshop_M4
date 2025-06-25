@@ -60,32 +60,32 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.7rem;
-  transition: background 0.3s, color 0.3s;
 }
 .lekker_stylen_winkellijst{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;             
+  justify-content: flex-start; 
+  gap: 2rem;                    
+  padding: 2rem;
+  width: 100%;
 }
 .lekker_stylen_winkellijst img{
   border-radius: 7.2rem;
   min-width: none;width: 30rem;
-  gap: 3rem;
+  gap: 1rem;
   justify-content: center;
   align-items: flex-start;
      flex-shrink: 0;
    display: flex;
    flex-direction: column;
    cursor: pointer;
-   padding: 1rem;
+    padding: 1rem;
     text-decoration: underline;
     border: 0.1rem solid black;
-    margin-top: 5rem;
     margin-left: 1rem;
 }
 .leeg{
   width: 25rem;
   display: flex;
   margin-top: 3rem;
-  
 }

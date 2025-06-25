@@ -4,26 +4,29 @@ window.onload = function() {
 
   function toonWinkelwagen() {
     if (winkelwagen.length === 0) {
-      main.innerHTML = `<div class="lekker_stylen_winkellijst"><p class="leeg"><span>Je winkelmand is leeg. </span></p></div>`;
+      main.innerHTML = `<div class="lekker_stylen_winkellijst"><p class="leeg"><span>Je winkelmand is leeg. </p></div>`;
       updateTeller();
       return;
     }
 
-    main.innerHTML = '';
-    winkelwagen.forEach((product, index) => {
-main.innerHTML += `
-    <div>
+
+const container = document.querySelector('.lekker_stylen_winkellijst');
+
+container.innerHTML = ''; // Leeg eerst de container
+
+winkelwagen.forEach((product, index) => {
+  container.innerHTML += `
+    <div class="product">
       <img src="${product.afbeelding}" alt="${product.naam}">
       <h3>${product.naam}</h3>
       <p>Prijs: €${product.prijs.toFixed(2)}</p>
       <button class="verwijder-button" onclick="verwijder(${index})">Verwijder</button>
-    </div><hr>
-`;
+    </div>
+  `;
+});
 
-    });
-    updateTeller();
-  }
-  
+  updateTeller();
+}
 
   window.verwijder = function(i) {
     winkelwagen.splice(i, 1);
