@@ -440,3 +440,9 @@ border: 0.15rem solid rgb(0, 0, 0);
   padding:0 .8rem;
   color: white;
 }
+
+@media (max-width: 480px) {
+  .product {
+    flex: 1 1 100%; /* 1 per rij */
+  }
+}
