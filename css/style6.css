@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: sans-serif;
+  background: radial-gradient(circle, rgb(241, 229, 234) 0%, rgb(220, 227, 242) 100%);
+}
+
+.header {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.9rem;
+  min-height: 100px;
+}
+
+.headerimg_1logo {
+  width: 8rem;
+  margin-left: 4rem;
+}
+
+.cart-icon {
+  position: fixed;
+  top: 2.5rem;
+  right: 3rem;
+  font-size: 4.3rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.cart-count {
+  position: absolute;
+  top: -0.8rem;
+  right: -0.10rem;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.

@@ -1,8 +1,13 @@
 let aantalProducten = 0;
 
-function voegToeAanWinkelwagen() {
-  aantalProducten += 1;
-  document.getElementById("cartcount").textContent = aantalProducten;
+function voegToeAanWinkelwagen(naam, prijs, afbeelding) {
+  let winkelwagen = JSON.parse(localStorage.getItem('winkelwagen')) || [];
+
+  winkelwagen.push({ naam, prijs, afbeelding });
+  localStorage.setItem('winkelwagen', JSON.stringify(winkelwagen));
+
+  // Update teller
+  document.getElementById("cartcount").textContent = winkelwagen.length;
 }
 
 
@@ -89,7 +94,10 @@ readMoreBtn.addEventListener('click', () => {
 }
 
 
-  clone.querySelector('.product___button').addEventListener('click', voegToeAanWinkelwagen);
+clone.querySelector('.product___button').addEventListener('click', () => {
+  voegToeAanWinkelwagen(naam, prijs, afbeelding);
+});
+
   
 
   productContainer.appendChild(clone);
